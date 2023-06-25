@@ -1,0 +1,57 @@
+<html>
+  <head>
+     <title>mercado poco libre</title>
+  </head>
+  <script>
+
+  function Calcular()
+  {
+    a=document.getElementById("lista").value;
+b=parseInt(datos.cant.value);
+
+   P=a*b;
+
+e=document.getElementById("opt2").value;
+
+    D=(P*20)/100;
+    
+    T=P+D+e
+
+    alert("El total es $"+T);
+    
+  }
+
+ </script>
+
+ <body bgcolor="orange" text="black">
+<form name="datos">
+  Articulos:
+  <select id="lista">
+   <option value="70">dance off </option>
+   <option value="160">minecraft en una semana </option>
+   <option value="180"> pull y break </option>
+    <option value="50"> juego prueba de online </option>
+    <option value="200"> calculadora cientifica(V 1.7) </option>
+   <option value="100"> qualiumSystemTest </option>
+</select>
+  <br>
+  Cantidad:
+   <input type="text" value="" name="cant">
+  <br>
+      <fieldset>
+       <legend>compra</legend>
+       
+       <input type="radio" id="opt" name="opt" value="20" /> mayorista
+
+       <input type="radio" id="opt" name="opt" value="0"/> minorista
+      </fieldset>
+<br>
+       <input type="checkbox" id="opt2" value="100" /> envio a domicilio
+
+  <br>
+  <br>
+  <input type="button"  value="ACEPTAR" onclick="Calcular()">
+  <input type="reset" value="CANCELAR">
+</form>
+    </body>
+</html>

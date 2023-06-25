@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Estructuras de control ITR</title>
+        <script>
+            function procesar()
+            {
+                A=parseInt(datos.Nro1.value)
+                B=parseInt(datos.Nro2.value)
+                if(A==B){R=A+B; alert("Los numeros son iguales, la suma es = " + R);}
+                if(A>B) {R=A-B; alert("Nro1 es mayor a Nro2, la resta es = " + R);}
+                if(A<B) {R=A*B; alert("Nro1 es menor a Nro2, la multiplicacion es = " + R);}
+            }
+        </script>
+    </head>
+    <body bgcolor="red" text="white">
+        <center>
+             <H1>el if </H1> 
+             <form name="datos">
+                 Ingrese el primer numero: 
+                 <input type="text" name="Nro1" value="">
+                 <br>
+                 Ingrese el segundo numero: 
+                 <input type="text" name="Nro2" value="">
+                 <br>
+                 <input type="button" value="calcular" onclick="procesar()">
+             </form>
+
+        </center>
+        
+    </body>
+</html>

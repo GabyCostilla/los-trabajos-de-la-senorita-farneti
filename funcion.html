@@ -1,0 +1,32 @@
+<html>
+<head>
+<title> liquidacion de sueldos </title>
+<script>
+function calculo()
+{ A= parseint(datos.A.value);
+B=parseint(datos.B.value);
+cargo=document.get.elementById("lista de empleados").value;
+R= A*cargo + B*70
+}
+alert("la liquidacion del sueldo es"+ R);
+</script>
+</head>
+<body bgcolor="#10F7CD" text= "#F9BC2E">
+<h1> liquidacion de sueldos </h1>
+<form name="datos">
+horas de trabajo
+<input type="text" value="" id="A"> <br>
+cargo
+<select id="lista de empleados">
+<option value="15000">jefe </option>
+<option value="5000">conserje</option>
+<option value="10000">secretaria</option>
+<option value="7000">oficinista</option>
+</select>
+<br>
+hijos
+<input type "text" value="" id="B"> <br>
+<input type="button" value="aceptar" onclick="calcular()">
+<input type="reset" value="cancelar">
+</form>
+</body>
